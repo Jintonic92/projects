@@ -29,7 +29,8 @@
 
 ### 모델에 영향을 미치는 feature 파악
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9987108b-710e-43c9-ace0-8ccc75a9e14f/Untitled.png)
+![image](https://user-images.githubusercontent.com/86962114/162906709-a3f886ea-2248-4c2d-bf59-9eda244999ed.png)
+
 
 - 상관관계를 보았을때 status와 큰 상관계수[ |0.2|로 설정]는 찾아보기 힘들었다.
 
@@ -39,12 +40,42 @@
 
 - 베이스라인 모델은 RandomForest 모델로 선정
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/79b2256a-1175-4841-bb96-e6ec1561fcee/Untitled.png)
+![image](https://user-images.githubusercontent.com/86962114/162906751-a240cf34-1f2d-4438-b2f7-4568c9f10d38.png)
     
     - 결정 트리를 만들 때 무작위로 선택한 특성들을 활용
     - Bagging sampling 기법을 사용하여 샘플을 복원추출하여 과적합을 피할 수 있는 장점
 - 결과
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7bcd6899-208a-444c-8af0-7c8165677146/Untitled.png)
+![image](https://user-images.githubusercontent.com/86962114/162906832-99aef4d2-59cf-433c-8ded-78b5d284c5e3.png)
     
     - Data의 불균형으로 인하여 과적합이 일어난 것 확인
+    - Logistic Regression, Decision Tree, XGBoost에서 모두 비슷한 결과 확인
+# 데이터 불균형 처리
+
+1. **MinMaxScaler 사용**
+    - 각 Feature 값을 일정한 범위 또는 규칙에 따르게 하기 위한 스케일링
+2. **SMOT 기법 사용**
+    - SMOTE(Synthetic Minority Over Sampling Techniques)은 비율이 낮은 분류의 데이털르 표본으로 더 많이 생성하는 방법
+- **결과**
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e930de76-814c-4060-bfc6-e0a1439c956d/Untitled.png)
+    
+    - 과적합 문제가 나아지면서 정확도가 낮아졌다.
+    - **모델들의 총 결과**
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6692497e-f9ba-45f0-ba3a-3d7f43243d45/Untitled.png)
+    
+    - XGBoost 의 f1-score가 가장 높았다.
+    
+
+# 결론
+
+- 가설 검증
+    - Occupation type보다 total amount income의 영향도가 클 것이다.
+        
+        ⇒ 아쉽게도 Occupation type은 결측치가 너무 많아 feature selection에서 제외되었다. Total Amount income은 feature importance에서 항상 Top3안에 들은 유일한 Feature임으로 중요한 Feature인 것으로 사료
+        
+- 분석 한계점
+    - ROC Curve, AUC 점수를 활용하지 못했다는 아쉬움
+        
+        : 특히 각 범주를 예측하는 기준이 되는 임계값의 위치에 따라 정밀도나 재현율이 달라지기 때문에 문제의 상황에 따라 적절한 임계값을 선택할 필요성이 있다. 이진 분류 문제에서 ROC curve와 AUC 점수를 잘 활용하면 좋은 결과를 만들어낼 수 있었을 것이다.
