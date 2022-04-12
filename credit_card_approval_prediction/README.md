@@ -44,7 +44,7 @@
     
     - 결정 트리를 만들 때 무작위로 선택한 특성들을 활용
     - Bagging sampling 기법을 사용하여 샘플을 복원추출하여 과적합을 피할 수 있는 장점
-- 결과
+- **결과**
     
 ![image](https://user-images.githubusercontent.com/86962114/162906832-99aef4d2-59cf-433c-8ded-78b5d284c5e3.png)
     
@@ -56,12 +56,12 @@
     - 각 Feature 값을 일정한 범위 또는 규칙에 따르게 하기 위한 스케일링
 2. **SMOT 기법 사용**
     - SMOTE(Synthetic Minority Over Sampling Techniques)은 비율이 낮은 분류의 데이털르 표본으로 더 많이 생성하는 방법
-**결과**
+- **결과**
     
 ![image](https://user-images.githubusercontent.com/86962114/162909368-e9910422-4ce3-4a74-9314-4fcde08ce904.png)
     
     - 과적합 문제가 나아지면서 정확도가 낮아졌다.
-**모델들의 총 결과**
+- **모델들의 총 결과**
     
 ![image](https://user-images.githubusercontent.com/86962114/162909334-01fdeee4-0368-41e5-99fa-4bd9d4f69576.png)
     
