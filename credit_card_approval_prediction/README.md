@@ -10,7 +10,7 @@
     - Application, Credit data 2개의 데이터로 구성
     - Good/Bad client의 분류가 별도로 되어 있지 않아 credit data에서의 대출상환 정보를 기반으로 Good/Bad Client 선정
     - Target은 Good Client/Bad Client으로 이중 분류 문제로 접근
-- 가설
+- **가설**
     - Occupation type(직업 종류)보다 Total Amount income(연간 수입)의 영향도가 더 클 것이다.
     - XGBoost 모델의 정확도가 가장 클 것이다.
 
