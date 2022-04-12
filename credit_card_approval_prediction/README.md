@@ -56,7 +56,7 @@
     - 각 Feature 값을 일정한 범위 또는 규칙에 따르게 하기 위한 스케일링
 2. **SMOT 기법 사용**
     - SMOTE(Synthetic Minority Over Sampling Techniques)은 비율이 낮은 분류의 데이털르 표본으로 더 많이 생성하는 방법
-- **결과**
+**결과**
     
 ![image](https://user-images.githubusercontent.com/86962114/162909368-e9910422-4ce3-4a74-9314-4fcde08ce904.png)
     
