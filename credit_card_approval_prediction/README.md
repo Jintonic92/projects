@@ -61,7 +61,7 @@
 ![image](https://user-images.githubusercontent.com/86962114/162909368-e9910422-4ce3-4a74-9314-4fcde08ce904.png)
     
     - 과적합 문제가 나아지면서 정확도가 낮아졌다.
-    - **모델들의 총 결과**
+**모델들의 총 결과**
     
 ![image](https://user-images.githubusercontent.com/86962114/162909334-01fdeee4-0368-41e5-99fa-4bd9d4f69576.png)
     
