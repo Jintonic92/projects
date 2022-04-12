@@ -25,7 +25,7 @@
 
 ### 데이터 시각화
 
-- Code link
+- 🔗[링크](https://github.com/Jintonic92/projects/blob/main/credit_card_approval_prediction/Credit_Card_approval_model.ipynb)
 
 ### 모델에 영향을 미치는 feature 파악
 
