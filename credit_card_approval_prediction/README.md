@@ -58,12 +58,12 @@
     - SMOTE(Synthetic Minority Over Sampling Techniques)은 비율이 낮은 분류의 데이털르 표본으로 더 많이 생성하는 방법
 - **결과**
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e930de76-814c-4060-bfc6-e0a1439c956d/Untitled.png)
+![image](https://user-images.githubusercontent.com/86962114/162909368-e9910422-4ce3-4a74-9314-4fcde08ce904.png)
     
     - 과적합 문제가 나아지면서 정확도가 낮아졌다.
     - **모델들의 총 결과**
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6692497e-f9ba-45f0-ba3a-3d7f43243d45/Untitled.png)
+![image](https://user-images.githubusercontent.com/86962114/162909334-01fdeee4-0368-41e5-99fa-4bd9d4f69576.png)
     
     - XGBoost 의 f1-score가 가장 높았다.
     
@@ -72,10 +72,8 @@
 
 - 가설 검증
     - Occupation type보다 total amount income의 영향도가 클 것이다.
-        
-        ⇒ 아쉽게도 Occupation type은 결측치가 너무 많아 feature selection에서 제외되었다. Total Amount income은 feature importance에서 항상 Top3안에 들은 유일한 Feature임으로 중요한 Feature인 것으로 사료
+     ⇒ 아쉽게도 Occupation type은 결측치가 너무 많아 feature selection에서 제외되었다. Total Amount income은 feature importance에서 항상 Top3안에 들은 유일한 Feature임으로 중요한 Feature인 것으로 사료
         
 - 분석 한계점
     - ROC Curve, AUC 점수를 활용하지 못했다는 아쉬움
-        
-        : 특히 각 범주를 예측하는 기준이 되는 임계값의 위치에 따라 정밀도나 재현율이 달라지기 때문에 문제의 상황에 따라 적절한 임계값을 선택할 필요성이 있다. 이진 분류 문제에서 ROC curve와 AUC 점수를 잘 활용하면 좋은 결과를 만들어낼 수 있었을 것이다.
+    : 특히 각 범주를 예측하는 기준이 되는 임계값의 위치에 따라 정밀도나 재현율이 달라지기 때문에 문제의 상황에 따라 적절한 임계값을 선택할 필요성이 있다. 이진 분류 문제에서 ROC curve와 AUC 점수를 잘 활용하면 좋은 결과를 만들어낼 수 있었을 것이다.
