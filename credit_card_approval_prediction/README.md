@@ -5,7 +5,7 @@
 - **프로젝트 목표**:  신용카드 발급 승인 여부 모델
     - 기존 신용 승인/거절 고객들의 데이터를 기반으로 신규 신청 고객의 신용 승인/거절 예측하는 모델 구축
     - 선정 이유 : 신용 점수는 실생활에서도 매우 밀접하게 연관되어 있어서 흥미로운 주제로 선택
-- **프로젝트 기간**: 2021.07.27 - 2021.09.02 [총 7일]
+- **프로젝트 기간**: 2021.08.27 - 2021.09.02 [총 7일]
 - **사용된 데이터** 🔗[링크](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction)
     - Application, Credit data 2개의 데이터로 구성
     - Good/Bad client의 분류가 별도로 되어 있지 않아 credit data에서의 대출상환 정보를 기반으로 Good/Bad Client 선정
