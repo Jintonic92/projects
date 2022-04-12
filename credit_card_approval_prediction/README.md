@@ -1,7 +1,7 @@
 # Best Model for Credit Card Approval
 
 # **프로젝트 개요:**
-- **프로젝트 발표 링크**: 🔗[링크](https://drive.google.com/file/d/1Aig6aaIZvkwFduWtx5scsAITmVtrsj0T/view?usp=sharing)
+- **프로젝트 발표  링크**: 🔗[링크](https://drive.google.com/file/d/1Aig6aaIZvkwFduWtx5scsAITmVtrsj0T/view?usp=sharing)
 - **프로젝트 목표**:  신용카드 발급 승인 여부 모델
     - 기존 신용 승인/거절 고객들의 데이터를 기반으로 신규 신청 고객의 신용 승인/거절 예측하는 모델 구축
     - 선정 이유 : 신용 점수는 실생활에서도 매우 밀접하게 연관되어 있어서 흥미로운 주제로 선택
