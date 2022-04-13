@@ -8,23 +8,19 @@
     - **Wapeul 기업 협업 프로젝트**
     - 비접촉 Radar 데이터를 접촉(ECG)데이터와 비교 학습하여 레이더 데이터만 가지고 HR(Heart Rate)을 정확하게 예측하는 모델 구축
     - **성능 측정법** : MSE, MAE, Error rate
-    
     ![image](https://user-images.githubusercontent.com/86962114/163170683-f7751a58-2889-410e-b50d-6440ce19af78.png)
     
 - **프로젝트 기간**: 2021.12.27 - 2022.01.19 [총 23일]
 - **사용된 데이터**
     - 기업에서 제공한 11개의 7명의 자세별[sit, lie, sleep] 생체반응 데이터
-    
     ![image](https://user-images.githubusercontent.com/86962114/163170706-eef76c93-f1e1-4c39-802a-01eeb6fb6986.png)
     
     - **FFT :**  신호 데이터를 기존 시간의 관점에서 주파수 관점으로 변환시킨 것
         
         ![image](https://user-images.githubusercontent.com/86962114/163170746-770967ba-da78-404e-aafa-4207b508d313.png)
         
-        (a) 시간에 따른 데이터를 (b) 주기에 따른 데이터로 변환시키는 것
-        
-        FFT size가 클수록, 주파수 해상도는 증가한다. 윈도우가 늘어나기에 해상도는 더 정확해 진다. 
-        
+        - (a) 시간에 따른 데이터를 (b) 주기에 따른 데이터로 변환시키는 것      
+        - FFT size가 클수록, 주파수 해상도는 증가한다. 윈도우가 늘어나기에 해상도는 더 정확해 진다.     
     - **가설** : 자세에 기반하여 만들어진 모델들의 예측 성능이 좋을 것이다
 
 # **프로젝트 내용**
@@ -70,9 +66,9 @@
     ![image](https://user-images.githubusercontent.com/86962114/163171001-3cfe72de-3ae5-4ab3-b1ec-60aa12e6a298.png)
     
     1. 총 5개의 데이터를 base, hypertuned 2개의 모델로 훈련 결과 10개를 나타낸 표
-    2. NNB Four 모델의 경우 mse, mae, error rate 모두 높은 것을 알 수 있다. 이는 다양한 자세의 데이터가 있다 보니 predict이 어렵기 때문이다. 
+    2. NNB Four 모델의 경우 mse, mae, error rate 모두 높은 것을 알 수 있다. 이는 다양한 자세의 데이터가 있다 보니 predict이 어렵기 때문
     3. Lie 1.0 데이터가 많아, 이를 활용하고자 했지만 의외로 mse, mae 모두 높아 조금 아쉬운 결과가 나왔다.
-    4. Lie 0.5 데이터의 mse가 가장 낮게 나왔다. 이는 Lie 0.5 데이터 수가 가장 적기 때문이다. 
+    4. Lie 0.5 데이터의 mse가 가장 낮게 나왔다. 이는 Lie 0.5 데이터 수가 가장 적기 때문
 
 ## Machine Learning Models
 
@@ -90,7 +86,7 @@
     
     ![image](https://user-images.githubusercontent.com/86962114/163171129-ebbe8c04-caed-4a19-834d-e0148c023550.png)
     
-- 결과
+- **결과**
     
     ![image](https://user-images.githubusercontent.com/86962114/163171152-8f6acf0d-667b-4f86-a29e-a5e91f6b386c.png)
     
@@ -130,7 +126,7 @@
 
 # Best Model로 Test
 
-- 자세를 기반으로 한 모델이 자신과 동일한 자세 데이터에 대한 예측을 잘할 것이다라는 가설 입증위하여
+- 자세를 기반으로 한 모델이 자신과 동일한 자세 데이터에 대한 예측을 잘할 것이다라는 가설 입증 위하여
     - Sleep Model : 다른 데이터가 없어 sit 데이터로 test
     - Sit Model : 다른 데이터가 없어 sleep 데이터로 test
     - Lie 0.5 Model : 다른 Lie 0.5 데이터로 test
