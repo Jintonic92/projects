@@ -29,7 +29,7 @@
     
 ![image](https://user-images.githubusercontent.com/86962114/163324903-64c08002-091b-4893-a4ad-15aa5e84a532.png)
     
-    - **나이가 많을 수록, 심장 박출계수가 높을 수록, 혈중 크레아틴 레벨이 높을수록 신부전 위험(사망률)이 높은 것을 확인**
+    - 나이가 많을 수록, 심장 박출계수가 높을 수록, 혈중 크레아틴 레벨이 높을수록 신부전 위험(사망률)이 높은 것을 확인
 
 # SQLITE DB 생성
 ![image](https://user-images.githubusercontent.com/86962114/163324922-f791b102-521f-426b-b572-bf7d8fb584e8.png)
