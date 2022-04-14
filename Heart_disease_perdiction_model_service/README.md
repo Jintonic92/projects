@@ -19,7 +19,8 @@
 
 # **프로젝트 내용**
 
-# EDA (using BI Tools)  🔗[링크](https://datastudio.google.com/reporting/7b040677-65cd-4e63-9411-549a2a936325)
+# EDA (using BI Tools)  
+- **BI** 🔗[링크](https://datastudio.google.com/reporting/7b040677-65cd-4e63-9411-549a2a936325)
 
 ![image](https://user-images.githubusercontent.com/86962114/163324887-c9d7e61e-5583-4ee9-9ad0-11c07d501feb.png)
 
