@@ -30,4 +30,4 @@ The controller consists of two Class
 3. Select Account
 4. View Balance, Deposit, Withdraw
 
-![image](https://user-images.githubusercontent.com/86962114/164974010-578fb433-529d-4ddb-ba25-01b45de08930.png)
+![image](https://user-images.githubusercontent.com/86962114/164974036-317995b6-9862-4261-bebb-5553f1498253.png)
