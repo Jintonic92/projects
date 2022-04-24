@@ -20,8 +20,8 @@ The controller consists of two Class
     - select_account(account)
       : selects_account
      - account_actions(card_num, account, action, amount)
-       : defaut amount is 0 considering check balance action
-       :  
+        -hi   
+       : defaut amount is 0 considering check balance actio
 
 ##The controller should work with the flow
 ###1. Insert Card
