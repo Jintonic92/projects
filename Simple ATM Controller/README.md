@@ -19,12 +19,15 @@ The controller consists of two Class
       : checks pin number 
     - select_account(account)
       : selects_account
-     - account_actions(card_num, account, action, amount)
-        -hi   
-       : defaut amount is 0 considering check balance actio
+     - account_actions(card_num, account, action, amount) 
+       : defaut amount is 0 considering "check balance" action
+       : action = "Check Balance", "Withdraw", "Deposit"
 
-##The controller should work with the flow
-###1. Insert Card
-###2. Enter Pin number
-###3. Select Account
-###4. View Balance, Deposit, Withdraw
+# The controller should work with the flow
+
+1. Insert Card
+2. Enter Pin number
+3. Select Account
+4. View Balance, Deposit, Withdraw
+
+![image](https://user-images.githubusercontent.com/86962114/164973971-3c8013ca-80cf-4616-a15b-4030988921d4.png)
